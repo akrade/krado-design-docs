@@ -26,6 +26,8 @@ export default function Header() {
         <div style={{ display: 'flex', gap: 'var(--krado-spacing-md, 1rem)' }}>
           <a
             href="https://github.com/akrade/krado-design-docs"
+            target="_blank"
+            rel="noopener noreferrer"
             style={{
               fontSize: 'var(--krado-font-size-sm, 0.875rem)',
               color: 'var(--krado-color-text-secondary, #666)',
@@ -35,6 +37,8 @@ export default function Header() {
           </a>
           <a
             href="https://x.com/akradeco"
+            target="_blank"
+            rel="noopener noreferrer"
             style={{
               fontSize: 'var(--krado-font-size-sm, 0.875rem)',
               color: 'var(--krado-color-text-secondary, #666)',
