@@ -13,15 +13,6 @@ export default function CommingSoon() {
           A comprehensive design system with reusable components, design tokens, and best practices for building consistent and scalable user interfaces.
         </p>
 
-        <div className={styles.cta}>
-          <KradoButton variant="primary" size="large">
-            Learn More
-          </KradoButton>
-          <KradoButton variant="secondary" size="large">
-            Contact Us
-          </KradoButton>
-        </div>
-
         <div className={styles.footer}>
           <h3 className={styles.featureTitle}>
             Features Coming Soon
