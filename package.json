@@ -1,0 +1,20 @@
+{
+  "name": "krado-design-docs",
+  "version": "0.1.0",
+  "description": "Krado Life Design System Documentation",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/react": "^3.0.0",
+    "astro": "^5.16.4",
+    "krado-ui": "file:../krado-ui",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
