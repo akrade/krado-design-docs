@@ -1,0 +1,71 @@
+/* Krado Design System Tokens */
+/* This file defines CSS custom properties for the design system */
+/* Override these values in your design token build process */
+
+:root {
+  /* Colors */
+  --color-primary: #0066cc;
+  --color-primary-dark: #0052a3;
+  --color-secondary: #6c5ce7;
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #666666;
+  --color-surface-primary: #ffffff;
+  --color-surface-secondary: #f5f7fa;
+  --color-border: #e5e7eb;
+  --color-link: #0066cc;
+  --color-link-hover: #0052a3;
+
+  /* Typography - Font Families */
+  --typography-font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --typography-font-family-mono: 'Monaco', 'Courier New', monospace;
+
+  /* Typography - Font Sizes */
+  --typography-size-display-lg: 3.5rem;
+  --typography-size-display-md: 2rem;
+  --typography-size-heading-lg: 1.5rem;
+  --typography-size-heading-md: 1.25rem;
+  --typography-size-body-lg: 1.25rem;
+  --typography-size-body-md: 1rem;
+  --typography-size-body-sm: 0.875rem;
+
+  /* Typography - Font Weights */
+  --typography-weight-regular: 400;
+  --typography-weight-medium: 500;
+  --typography-weight-semibold: 600;
+  --typography-weight-bold: 700;
+
+  /* Typography - Line Heights */
+  --typography-line-height-tight: 1.2;
+  --typography-line-height-base: 1.5;
+  --typography-line-height-relaxed: 1.6;
+  --typography-line-height-heading: 1.2;
+
+  /* Spacing */
+  --spacing-xs: 6px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 20px;
+  --spacing-2xl: 24px;
+  --spacing-3xl: 32px;
+  --spacing-4xl: 48px;
+
+  /* Border Radius */
+  --border-radius-sm: 3px;
+  --border-radius-md: 6px;
+  --border-radius-lg: 12px;
+  --border-radius-full: 999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  /* Motion */
+  --motion-duration-base: 0.2s;
+  --motion-duration-slow: 0.4s;
+  --motion-easing-base: ease;
+  --motion-easing-in: ease-in;
+  --motion-easing-out: ease-out;
+  --motion-easing-inout: ease-in-out;
+}

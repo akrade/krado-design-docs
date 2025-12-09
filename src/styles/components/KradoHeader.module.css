@@ -1,0 +1,36 @@
+.heading {
+  font-weight: inherit;
+  line-height: var(--typography-line-height-tight, 1.2);
+  margin: var(--spacing-lg, 1rem) 0;
+  color: var(--color-text-primary, #1a1a1a);
+}
+
+.h1 {
+  font-size: var(--typography-size-display-lg, 2.5rem);
+  font-weight: var(--typography-weight-bold, 700);
+}
+
+.h2 {
+  font-size: var(--typography-size-display-md, 2rem);
+  font-weight: var(--typography-weight-bold, 700);
+}
+
+.h3 {
+  font-size: var(--typography-size-heading-lg, 1.5rem);
+  font-weight: var(--typography-weight-semibold, 600);
+}
+
+.h4 {
+  font-size: var(--typography-size-heading-md, 1.25rem);
+  font-weight: var(--typography-weight-semibold, 600);
+}
+
+.h5 {
+  font-size: var(--typography-size-body-lg, 1rem);
+  font-weight: var(--typography-weight-semibold, 600);
+}
+
+.h6 {
+  font-size: var(--typography-size-body-md, 0.875rem);
+  font-weight: var(--typography-weight-semibold, 600);
+}
