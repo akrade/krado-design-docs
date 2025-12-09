@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from '../styles/components/KradoButton.module.css';
 
 const KradoButton = ({
   children,
@@ -9,36 +10,15 @@ const KradoButton = ({
   onClick,
   ...props
 }) => {
-  const baseStyles = {
-    padding: size === 'large' ? '12px 24px' : size === 'small' ? '6px 12px' : '8px 16px',
-    fontSize: size === 'large' ? '1.125rem' : size === 'small' ? '0.875rem' : '1rem',
-    borderRadius: '6px',
-    border: 'none',
-    fontWeight: 500,
-    transition: 'all 0.2s ease',
-    opacity: disabled ? 0.6 : 1,
-    cursor: disabled ? 'not-allowed' : 'pointer',
-  };
-
-  const variantStyles = {
-    primary: {
-      backgroundColor: '#0066cc',
-      color: '#fff',
-    },
-    secondary: {
-      backgroundColor: '#e5e7eb',
-      color: '#1a1a1a',
-    },
-  };
-
-  const buttonStyles = {
-    ...baseStyles,
-    ...variantStyles[variant] || variantStyles.primary,
-  };
+  const classNames = [
+    styles.button,
+    styles[variant],
+    styles[size],
+  ].filter(Boolean).join(' ');
 
   return (
     <button
-      style={buttonStyles}
+      className={classNames}
       disabled={disabled}
       onClick={onClick}
       {...props}

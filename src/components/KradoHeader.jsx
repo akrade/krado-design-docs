@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from '../styles/components/KradoHeader.module.css';
 
 const KradoHeader = ({
   children,
@@ -9,26 +10,19 @@ const KradoHeader = ({
   ...props
 }) => {
   const Component = as;
-
-  const fontSizes = {
-    1: '2.5rem',
-    2: '2rem',
-    3: '1.5rem',
-    4: '1.25rem',
-    5: '1rem',
-    6: '0.875rem',
+  const sizeMap = {
+    1: 'h1',
+    2: 'h2',
+    3: 'h3',
+    4: 'h4',
+    5: 'h5',
+    6: 'h6',
   };
 
-  const styles = {
-    fontSize: fontSizes[level] || fontSizes[1],
-    fontWeight: level <= 2 ? 700 : 600,
-    lineHeight: 1.2,
-    margin: '1rem 0',
-    color: '#1a1a1a',
-  };
+  const className = [styles.heading, styles[sizeMap[level]]].filter(Boolean).join(' ');
 
   return (
-    <Component style={styles} {...props}>
+    <Component className={className} {...props}>
       {children}
     </Component>
   );
