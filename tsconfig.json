@@ -1,0 +1,9 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "jsxImportSource": "react",
+    "jsx": "react-jsx",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true
+  }
+}

@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.jsx';
+import CommingSoon from '../components/CommingSoon.jsx';
+---
+
+<BaseLayout title="Krado Life Design System" description="Welcome to the Krado Life Design System landing page">
+  <Header client:load />
+  <CommingSoon client:load />
+</BaseLayout>

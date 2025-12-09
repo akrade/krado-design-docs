@@ -1,0 +1,63 @@
+---
+// Import Krado UI tokens (uncomment when krado-ui is built with styles)
+// import 'krado-ui/dist/styles/tokens.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'Krado Life Design System' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <style is:global>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-family: var(--krado-font-family-base, system-ui, -apple-system, sans-serif);
+        background-color: var(--krado-color-background, #fafafa);
+        color: var(--krado-color-text-primary, #333);
+      }
+
+      body {
+        line-height: var(--krado-line-height-base, 1.5);
+        color: var(--krado-color-text-primary, #333);
+        font-size: var(--krado-font-size-base, 1rem);
+      }
+
+      a {
+        color: var(--krado-color-link, inherit);
+        text-decoration: none;
+        transition: color var(--krado-transition-base, 0.2s ease);
+      }
+
+      a:hover {
+        color: var(--krado-color-link-hover, inherit);
+      }
+
+      button {
+        cursor: pointer;
+        font-family: var(--krado-font-family-base, system-ui, -apple-system, sans-serif);
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        font-weight: var(--krado-font-weight-bold, 700);
+        line-height: var(--krado-line-height-heading, 1.2);
+      }
+    </style>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
