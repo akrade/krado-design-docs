@@ -1,4 +1,4 @@
-# Krado Life Design System Documentation
+# Cotton Design System Documentation
 
 Welcome to the **Krado Life Design System** documentation site! This is the official documentation for the Krado UI component library and design tokens.
 
